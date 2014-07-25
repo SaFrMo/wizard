@@ -6,7 +6,8 @@ public class Spell : MonoBehaviour {
 
 	public enum SpellType
 	{
-		Wind
+		Wind,
+		Earth
 	}
 
 	private delegate void SpellAction();
@@ -17,14 +18,34 @@ public class Spell : MonoBehaviour {
 	private bool lockShowRange = false;
 	private bool mouseIsOver = false;
 
+	/// <summary>
+	/// Activates the spell.
+	/// </summary>
 	private void ActivateSpell()
 	{
-		switch (spellType)
-		{
-		case SpellType.Wind:
-			break;
-		}
+		// First, get everything within range
+		Collider2D[] inRange = Physics2D.OverlapAreaAll ((Vector2)transform.position - Vector2.one * range,
+		                                                 (Vector2)transform.position + Vector2.one * range);
 
+		// Figure out the appropriate spell effect and apply it
+		switch (spellType) {
+
+		case SpellType.Wind:
+			foreach (Collider2D c in inRange) {
+				try { c.gameObject.GetComponent<AffectedByWind>().ApplyEffect((Vector2)transform.position); }
+				catch {}
+			}
+			break;
+
+		case SpellType.Earth:
+			foreach (Collider2D c in inRange) {
+				try { c.gameObject.GetComponent<AffectedByEarth>().ApplyEffect((Vector2)transform.position); }
+				catch {}
+			}
+			break;
+
+
+		}
 		Destroy (gameObject);
 	}
 
@@ -40,17 +61,12 @@ public class Spell : MonoBehaviour {
 		}
 	}
 
-	// Show range on mouse over
-	private void OnMouseEnter()
-	{
-		mouseIsOver = true;
-	}
 
-	private void OnMouseExit()
-	{
-		mouseIsOver = false;
-	}
+	// RANGE ===============================================
+	private void OnMouseEnter() { mouseIsOver = true; }
+	private void OnMouseExit() { mouseIsOver = false; }
 
+	// UPDATE ==============================================	
 	private void Update ()
 	{
 		if (mouseIsOver && Input.GetMouseButtonDown(0))

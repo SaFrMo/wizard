@@ -1,15 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LightObject : MonoBehaviour {
+public class LightObject : MapElement {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public float spacesToMove = 3f;
+
+	private Vector2 targetPosition;
+
+	public new void ApplyWind (Vector2 source) 
+	{
+		base.ApplyWind(source);
+
+		// Move this object spacesToMove spaces away from source
+		// TODO: move farther when closer?
+		targetPosition = Vector2.MoveTowards ((Vector2)transform.position,
+		                                      targetPosition,
+		                                      -spacesToMove);
+		transform.position = targetPosition;
+
+
 	}
 }

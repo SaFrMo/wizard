@@ -4,6 +4,7 @@ using System.Collections;
 public class SpellPlacement : MonoBehaviour {
 
 	public GameObject windSpell;
+	public GameObject earthSpell;
 
 	public KeyCode cancelKey = KeyCode.LeftShift;
 	
@@ -43,6 +44,10 @@ public class SpellPlacement : MonoBehaviour {
 			spellPrefab = windSpell;
 			break;
 
+		case "Earth":
+			spellPrefab = earthSpell;
+			break;
+
 		}
 
 		// clear planter placer
@@ -62,7 +67,6 @@ public class SpellPlacement : MonoBehaviour {
 		}
 		if (Input.GetMouseButtonUp(0) && GUIUtility.hotControl == 0) {
 			if (!Input.GetKey(cancelKey) && spellPlacer != null) {
-				print ("mouse up...");
 				// can only create a planter if it doesn't overlap another
 				Collider2D otherSpells = Physics2D.OverlapArea (spellPlacer.renderer.bounds.min, spellPlacer.renderer.bounds.max);
 				if (otherSpells == null)
