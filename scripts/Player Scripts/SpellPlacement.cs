@@ -3,10 +3,13 @@ using System.Collections;
 
 public class SpellPlacement : MonoBehaviour {
 
+	public GameObject windSpell;
+
 	public KeyCode cancelKey = KeyCode.LeftShift;
 	
-	public GameObject spellPrefab;
+
 	public GameObject spellPlacerPrefab;
+	private GameObject spellPrefab;
 	private GameObject spellPlacer = null;
 	
 	private Vector2 selectedPosition;
@@ -28,15 +31,29 @@ public class SpellPlacement : MonoBehaviour {
 	}
 	
 	public void CreateSpell () {
-		// only activate when the new planter would not interfere with an old one
-		GameObject spell = GameObject.Instantiate (spellPrefab) as GameObject;
-		spell.transform.position = selectedPosition;
-		
-		// unique name for each custom planter
-		spell.gameObject.name = string.Format ("New Spell");
-		
+
+		switch (Wizard.SELECTED_SPELL)
+		{
+
+		case "No Spell":
+			spellPrefab = null;
+			break;
+
+		case "Wind":
+			spellPrefab = windSpell;
+			break;
+
+		}
+
 		// clear planter placer
 		Destroy (spellPlacer);
+
+		if (spellPrefab == null) 
+			return;
+
+		GameObject spell = GameObject.Instantiate (spellPrefab) as GameObject;
+		spell.transform.position = selectedPosition;
+		spell.name = Wizard.SELECTED_SPELL + " Spell";
 	}
 	
 	protected void Update () {
