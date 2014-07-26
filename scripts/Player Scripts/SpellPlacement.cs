@@ -6,6 +6,7 @@ public class SpellPlacement : MonoBehaviour {
 	public GameObject windSpell;
 	public GameObject earthSpell;
 	public GameObject lightningSpell;
+	public GameObject returnSpell;
 
 	public KeyCode cancelKey = KeyCode.LeftShift;
 	
@@ -51,6 +52,10 @@ public class SpellPlacement : MonoBehaviour {
 
 		case "Lightning":
 			spellPrefab = lightningSpell;
+			break;
+
+		case "Return":
+			spellPrefab = returnSpell;
 			break;
 
 		}

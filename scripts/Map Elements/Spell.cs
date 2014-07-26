@@ -8,7 +8,8 @@ public class Spell : MonoBehaviour {
 	{
 		Wind,
 		Earth,
-		Lightning
+		Lightning,
+		Return
 	}
 
 	private delegate void SpellAction();
@@ -50,6 +51,10 @@ public class Spell : MonoBehaviour {
 				try { c.gameObject.GetComponent<AffectedByLightning>().ApplyEffect((Vector2)transform.position); }
 				catch {}
 			}
+			break;
+
+		case SpellType.Return:
+			Wizard.ReturnSpell();
 			break;
 
 

@@ -18,6 +18,7 @@ public class AffectedByEarth : MonoBehaviour {
 			// Destroy this collider and let the pieces fall
 			GetComponent<Collider2D>().enabled = false;
 			// TODO: pieces fall
+			Destroy (gameObject);
 			break;
 
 		}
