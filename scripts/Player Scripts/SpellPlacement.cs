@@ -27,6 +27,19 @@ public class SpellPlacement : MonoBehaviour {
 		
 		// instantiates an object to show where the planter will go
 		if (spellPlacer == null) {
+			print (Wizard.SELECTED_SPELL);
+			switch (Wizard.SELECTED_SPELL)
+			{
+
+			case "Wind": spellPlacer = windSpell; break;
+			case "Earth": spellPlacer = earthSpell; break;
+			case "Lightning": spellPlacer = lightningSpell; break;
+			case "Return": spellPlacer = returnSpell; break;
+			case "Rain": spellPlacer = rainSpell; break;
+			case "Ice": spellPlacer = iceSpell; break;
+			//default: spellPlacer = windSpell; break;
+
+			}
 			spellPlacer = GameObject.Instantiate (spellPlacerPrefab) as GameObject;
 			try { spellPlacer.GetComponent<Collider2D>().enabled = false; }
 			catch {}
