@@ -16,7 +16,7 @@ public class AffectedByEarth : MonoBehaviour {
 
 		case Effect.Crumble:
 			// Destroy this collider and let the pieces fall
-			GetComponent<BoxCollider2D>().enabled = false;
+			GetComponent<Collider2D>().enabled = false;
 			// TODO: pieces fall
 			break;
 

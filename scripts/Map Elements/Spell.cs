@@ -7,7 +7,8 @@ public class Spell : MonoBehaviour {
 	public enum SpellType
 	{
 		Wind,
-		Earth
+		Earth,
+		Lightning
 	}
 
 	private delegate void SpellAction();
@@ -40,6 +41,13 @@ public class Spell : MonoBehaviour {
 		case SpellType.Earth:
 			foreach (Collider2D c in inRange) {
 				try { c.gameObject.GetComponent<AffectedByEarth>().ApplyEffect((Vector2)transform.position); }
+				catch {}
+			}
+			break;
+
+		case SpellType.Lightning:
+			foreach (Collider2D c in inRange) {
+				try { c.gameObject.GetComponent<AffectedByLightning>().ApplyEffect((Vector2)transform.position); }
 				catch {}
 			}
 			break;
