@@ -118,8 +118,9 @@ public class Wizard : MonoBehaviour {
 
 		if (currentState.IsName("Walking") || currentState.IsName("Idle"))
 		{
-			rigidbody2D.velocity = (climbingLadder ? Vector2.up : Vector2.right) 
-				* (falling ? 0 : speed);
+			if (climbingLadder) rigidbody2D.velocity = Vector2.up * speed;
+			else if (falling) {}
+			else rigidbody2D.velocity = Vector2.right * speed;
 		}
 	}
 
