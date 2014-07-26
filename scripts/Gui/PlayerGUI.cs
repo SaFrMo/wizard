@@ -22,8 +22,12 @@ public class PlayerGUI : MonoBehaviour {
 		}
 		GUILayout.EndHorizontal();
 
+		GUILayout.BeginHorizontal();
 		if (GUILayout.Button ("GO!"))
 			Wizard.Go();
+		if (GUILayout.Button ("Restart level!"))
+			Application.LoadLevel (Application.loadedLevelName);
+		GUILayout.EndHorizontal();
 		GUILayout.EndArea();
 	}
 }

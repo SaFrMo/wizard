@@ -17,7 +17,15 @@ public class AffectedByEarth : MonoBehaviour {
 		case Effect.Crumble:
 			// Destroy this collider and let the pieces fall
 			GetComponent<Collider2D>().enabled = false;
-			// TODO: pieces fall
+			foreach (Transform child in transform)
+			{
+				child.GetComponent<PolygonCollider2D>().enabled = true;
+				child.gameObject.AddComponent<Rigidbody2D>();
+				//child.rigidbody2D.
+				child.transform.parent = null;
+			}
+
+
 			Destroy (gameObject);
 			break;
 

@@ -6,6 +6,7 @@ public class Wizard : MonoBehaviour {
 	public static string SELECTED_SPELL = "No Spell";
 	public static bool going = false;
 	public static bool returning = false;
+	public static bool phasing = false;
 	public static void Go() { going = true; }
 	public static void Stop() { going = false; }
 
@@ -55,23 +56,57 @@ public class Wizard : MonoBehaviour {
 		case Spell.SpellType.Ice:
 			animator.SetTrigger("CastIce");
 			break;
+
+		case Spell.SpellType.Lightning:
+			animator.SetTrigger("CastLightning");
+			break;
+
+		case Spell.SpellType.Rain:
+			animator.SetTrigger("CastRain");
+			break;
+
+		case Spell.SpellType.Wind:
+			animator.SetTrigger("CastWind");
+			break;
+
+		case Spell.SpellType.Return:
+		case Spell.SpellType.Phase:
+			animator.SetTrigger("CastReturnOrPhase");
+			break;
 		}
 	}
 
+	private Vector3 targetPos = Vector3.zero;
+
 	private void Update ()
 	{
-		if (returning) 
+		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+		if (returning || phasing) 
 		{
-			transform.position = startPosition;
+			if (returning) targetPos = startPosition;
+			else if (phasing) targetPos = startPosition + -Vector3.right * 3f;
+
+			rigidbody2D.gravityScale = 0;
+
+			animator.SetTrigger ("CastReturnOrPhase");
+
 			returning = false;
+			phasing = false;
 		}
+		if (currentState.IsName("ReturnOrPhaseAppear") && targetPos != Vector3.zero)
+		{
+			transform.position = targetPos; 
+			rigidbody2D.gravityScale = 1f;
+			targetPos = Vector3.zero;
+		}
+
 		if (!going) {
 			animator.SetBool("Moving", false);
 			return;
 		}
 		else { animator.SetBool ("Moving", true); }
 
-		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+
 		if (currentState.IsName("Walking") || currentState.IsName("Idle"))
 		{
 			rigidbody2D.MovePosition ((Vector2)transform.position 

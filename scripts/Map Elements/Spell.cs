@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(BoxCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class Spell : MonoBehaviour {
 
 	public enum SpellType
@@ -11,7 +11,8 @@ public class Spell : MonoBehaviour {
 		Lightning,
 		Rain,
 		Ice,
-		Return
+		Return,
+		Phase
 	}
 
 	private delegate void SpellAction();
@@ -21,6 +22,7 @@ public class Spell : MonoBehaviour {
 
 	private bool lockShowRange = false;
 	private bool mouseIsOver = false;
+	private GameObject rangeIndicator = null;
 
 	/// <summary>
 	/// Activates the spell.
@@ -86,7 +88,7 @@ public class Spell : MonoBehaviour {
 		{
 			ActivateSpell();
 			GetComponent<SpriteRenderer>().enabled = false;
-			GetComponent<BoxCollider2D>().enabled = false;
+			GetComponent<Collider2D>().enabled = false;
 		}
 	}
 
@@ -101,8 +103,17 @@ public class Spell : MonoBehaviour {
 		if (mouseIsOver && Input.GetMouseButtonDown(0))
 			lockShowRange = !lockShowRange;
 
-		// TODO: show range
-		if (mouseIsOver || lockShowRange) 
-			print ("showing range");
+		if ((mouseIsOver || lockShowRange)) {
+			if (rangeIndicator == null) {
+				rangeIndicator = GameObject.Instantiate(gameObject) as GameObject;
+				rangeIndicator.transform.localScale = new Vector3(rangeIndicator.transform.localScale.x * range,
+				                                                  rangeIndicator.transform.localScale.y * range);
+				Destroy (rangeIndicator.GetComponent<Spell>());
+				Destroy (rangeIndicator.GetComponent<Collider2D>());
+				rangeIndicator.GetComponent<SpriteRenderer>().color = new Color (1f, 1f, 1f, .2f);
+			}
+		}
+
+		else { Destroy(rangeIndicator); }
 	}
 }
