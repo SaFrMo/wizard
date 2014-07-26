@@ -49,10 +49,12 @@ public class Spell : MonoBehaviour {
 			break;
 
 		case SpellType.Lightning:
+			Lightning.CreateLightningSprite();
 			foreach (Collider2D c in inRange) {
 				try { c.gameObject.GetComponent<AffectedByLightning>().ApplyEffect((Vector2)transform.position); }
 				catch {}
 			}
+
 			break;
 
 		case SpellType.Rain:
