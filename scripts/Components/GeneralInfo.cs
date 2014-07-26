@@ -24,12 +24,13 @@ public class GeneralInfo : MonoBehaviour {
 	
 	private void OnTriggerExit2D (Collider2D c)
 	{
+
 		if (c.gameObject.GetComponent<Water>() != null)
 			isInWater = false;
 	}
 
 	[HideInInspector]
-	public bool isInWater = false;
+	public bool isInWater = true;
 
 	public void Kill()
 	{

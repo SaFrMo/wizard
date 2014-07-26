@@ -26,6 +26,12 @@ public class AffectedByWater : MonoBehaviour {
 
 	private void Start ()
 	{
+		Invoke ("Check", .5f);
+
+	}
+
+	private void Check ()
+	{
 		if (effect == Effect.NeedsWaterToSurvive)
 			StartCoroutine("CheckForWater");
 	}
