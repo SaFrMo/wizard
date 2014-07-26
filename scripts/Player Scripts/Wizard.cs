@@ -18,6 +18,7 @@ public class Wizard : MonoBehaviour {
 	{
 		startPosition = transform.position;
 		animator = GetComponentInChildren<Animator>();
+		Stop ();
 	}
 
 	public float speed = 3f;
