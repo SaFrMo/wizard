@@ -28,6 +28,7 @@ public class GeneralInfo : MonoBehaviour {
 			isInWater = false;
 	}
 
+	[HideInInspector]
 	public bool isInWater = false;
 
 	public void Kill()
