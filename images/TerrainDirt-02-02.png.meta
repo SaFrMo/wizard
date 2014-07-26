@@ -48,7 +48,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -75,7 +75,7 @@ TextureImporter:
         x: 220
         y: 4272
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -84,8 +84,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1534
         y: 4272
-        width: 1201
-        height: 1200
+        width: 1210
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -95,7 +95,7 @@ TextureImporter:
         x: 2917
         y: 4272
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,7 +105,7 @@ TextureImporter:
         x: 4343
         y: 4272
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,7 +117,7 @@ TextureImporter:
         width: 346
         height: 294
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_9
       rect:
@@ -127,7 +127,7 @@ TextureImporter:
         width: 233
         height: 389
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_12
       rect:
@@ -135,7 +135,7 @@ TextureImporter:
         x: 220
         y: 2924
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +144,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1534
         y: 2924
-        width: 1201
-        height: 1201
+        width: 1210
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,7 +155,7 @@ TextureImporter:
         x: 2917
         y: 2924
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +165,7 @@ TextureImporter:
         x: 4343
         y: 2924
         width: 1209
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,7 +187,7 @@ TextureImporter:
         width: 224
         height: 450
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_18
       rect:
@@ -214,18 +214,18 @@ TextureImporter:
         serializedVersion: 2
         x: 1534
         y: 1533
-        width: 1200
-        height: 1200
+        width: 1210
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_21
       rect:
         serializedVersion: 2
-        x: 2917
+        x: 2925
         y: 1533
-        width: 1208
-        height: 1200
+        width: 1210
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
         serializedVersion: 2
         x: 5804
         y: 1568
-        width: 1199
+        width: 1209
         height: 1209
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_24
       rect:
@@ -255,17 +255,17 @@ TextureImporter:
         x: 220
         y: 108
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_25
       rect:
         serializedVersion: 2
-        x: 1534
+        x: 1526
         y: 108
-        width: 1202
-        height: 1209
+        width: 1210
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,7 +275,7 @@ TextureImporter:
         x: 2917
         y: 108
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -285,7 +285,7 @@ TextureImporter:
         x: 4308
         y: 108
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,7 +295,7 @@ TextureImporter:
         x: 5994
         y: 108
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,27 +305,27 @@ TextureImporter:
         x: 7454
         y: 108
         width: 1210
-        height: 1209
+        height: 1210
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_24
       rect:
         serializedVersion: 2
-        x: 5700
+        x: 5646
         y: 4225
-        width: 1210
-        height: 504
+        width: 1382
+        height: 553
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: TerrainDirt-02-02_25
       rect:
         serializedVersion: 2
-        x: 5657
-        y: 4885
-        width: 1209
-        height: 466
+        x: 5613
+        y: 4833
+        width: 1295
+        height: 618
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
