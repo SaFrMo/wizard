@@ -18,6 +18,7 @@ public class Water : MonoBehaviour {
 	}
 
 	public float rise = 5f;
+	public bool frozen = false;
 
 	private void Start ()
 	{

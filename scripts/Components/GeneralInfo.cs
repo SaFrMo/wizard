@@ -16,8 +16,10 @@ public class GeneralInfo : MonoBehaviour {
 
 	private void OnTriggerStay2D (Collider2D c)
 	{
-		if (c.gameObject.GetComponent<Water>() != null)
+		if (c.gameObject.GetComponent<Water>() != null && !c.gameObject.GetComponent<Water>().frozen)
 			isInWater = true;
+		else 
+			isInWater = false;
 	}
 	
 	private void OnTriggerExit2D (Collider2D c)

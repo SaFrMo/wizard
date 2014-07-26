@@ -10,7 +10,6 @@ public class AffectedByWater : MonoBehaviour {
 	
 	public Effect effect = Effect.NeedsWaterToSurvive;
 
-	public bool isInWater = false;
 
 
 
@@ -19,8 +18,24 @@ public class AffectedByWater : MonoBehaviour {
 	{
 		switch (effect) {
 		case Effect.NeedsWaterToSurvive:
-			// TODO
+			if (!GetComponent<GeneralInfo>().isInWater)
+				GetComponentInParent<GeneralInfo>().Kill();
 			break;
+		}
+	}
+
+	private void Start ()
+	{
+		if (effect == Effect.NeedsWaterToSurvive)
+			StartCoroutine("CheckForWater");
+	}
+
+	private IEnumerator CheckForWater ()
+	{
+		for (;;)
+		{
+			ApplyEffect(Vector2.zero);
+			yield return new WaitForSeconds(2f);
 		}
 	}
 }

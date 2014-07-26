@@ -10,6 +10,7 @@ public class Spell : MonoBehaviour {
 		Earth,
 		Lightning,
 		Rain,
+		Ice,
 		Return
 	}
 
@@ -56,6 +57,13 @@ public class Spell : MonoBehaviour {
 
 		case SpellType.Rain:
 			Water.RainSpell();
+			break;
+
+		case SpellType.Ice:
+			foreach (Collider2D c in inRange) {
+				try { c.gameObject.GetComponent<AffectedByIce>().ApplyEffect((Vector2)transform.position); }
+				catch {}
+			}
 			break;
 
 		case SpellType.Return:
