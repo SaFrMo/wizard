@@ -26,7 +26,7 @@ public class Lightning : MonoBehaviour {
 			{ iT.MoveTo.x, goalPoint.x },
 			{ iT.MoveTo.y, goalPoint.y },
 			{ iT.MoveTo.time, lightningSpeedStatic },
-			{ iT.MoveTo.easetype, iTween.EaseType.easeOutElastic }
+			{ iT.MoveTo.easetype, iTween.EaseType.easeOutQuart }
 		});
 	}
 }
