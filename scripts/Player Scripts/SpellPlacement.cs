@@ -31,12 +31,12 @@ public class SpellPlacement : MonoBehaviour {
 			switch (Wizard.SELECTED_SPELL)
 			{
 
-			case "Wind": spellPlacer = windSpell; break;
-			case "Earth": spellPlacer = earthSpell; break;
-			case "Lightning": spellPlacer = lightningSpell; break;
-			case "Return": spellPlacer = returnSpell; break;
-			case "Rain": spellPlacer = rainSpell; break;
-			case "Ice": spellPlacer = iceSpell; break;
+			case "Wind": spellPlacerPrefab = windSpell; break;
+			case "Earth": spellPlacerPrefab = earthSpell; break;
+			case "Lightning": spellPlacerPrefab = lightningSpell; break;
+			case "Return": spellPlacerPrefab = returnSpell; break;
+			case "Rain": spellPlacerPrefab = rainSpell; break;
+			case "Ice": spellPlacerPrefab = iceSpell; break;
 			//default: spellPlacer = windSpell; break;
 
 			}
