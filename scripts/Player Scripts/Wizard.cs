@@ -17,12 +17,14 @@ public class Wizard : MonoBehaviour {
 	private void Start ()
 	{
 		startPosition = transform.position;
+		animator = GetComponentInChildren<Animator>();
 	}
 
 	public float speed = 3f;
 
 	private Vector3 startPosition;
 	private bool climbingLadder = false;
+	private Animator animator;
 
 	private void OnCollisionEnter2D (Collision2D c)
 	{
@@ -45,11 +47,15 @@ public class Wizard : MonoBehaviour {
 			transform.position = startPosition;
 			returning = false;
 		}
-		if (!going) return;
+		if (!going) {
+			animator.SetBool("Moving", false);
+			return;
+		}
 
 		rigidbody2D.MovePosition ((Vector2)transform.position 
 		                          + (climbingLadder ? Vector2.up : Vector2.right)
 		                          * speed * Time.deltaTime);
+		animator.SetBool ("Moving", true);
 	}
 
 
