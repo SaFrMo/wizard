@@ -20,10 +20,18 @@ public class AffectedByWind : MonoBehaviour {
 		case Effect.MovedByWind:
 			// Move this object spacesToMove spaces away from source
 			// TODO: move farther when closer?
+
 			targetPosition = Vector2.MoveTowards ((Vector2)transform.position,
 			                                      targetPosition,
 			                                      -spacesToMove);
-			transform.position = targetPosition;
+
+			//transform.position = targetPosition;
+
+			iTween.MoveTo (gameObject, new Hashtable() {
+				{ iT.MoveTo.x, targetPosition.x },
+				{ iT.MoveTo.time, 3f },
+				{ iT.MoveTo.easetype, iTween.EaseType.easeOutCubic }
+			});
 			break;
 		}
 	}

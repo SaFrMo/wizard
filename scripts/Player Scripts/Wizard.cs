@@ -9,6 +9,8 @@ public class Wizard : MonoBehaviour {
 	public static void Go() { going = true; }
 	public static void Stop() { going = false; }
 
+	public static GameObject WIZARD;
+
 	public static void ReturnSpell()
 	{
 		returning = true;
@@ -19,6 +21,7 @@ public class Wizard : MonoBehaviour {
 		startPosition = transform.position;
 		animator = GetComponentInChildren<Animator>();
 		Stop ();
+		WIZARD = gameObject;
 	}
 
 	public float speed = 3f;
@@ -41,6 +44,20 @@ public class Wizard : MonoBehaviour {
 			climbingLadder = false;
 	}
 
+	public void AnimateSpell (Spell.SpellType s)
+	{
+		switch (s)
+		{
+		case Spell.SpellType.Earth:
+			animator.SetTrigger("CastMountain");
+			break;
+
+		case Spell.SpellType.Ice:
+			animator.SetTrigger("CastIce");
+			break;
+		}
+	}
+
 	private void Update ()
 	{
 		if (returning) 
@@ -52,11 +69,16 @@ public class Wizard : MonoBehaviour {
 			animator.SetBool("Moving", false);
 			return;
 		}
+		else { animator.SetBool ("Moving", true); }
 
-		rigidbody2D.MovePosition ((Vector2)transform.position 
-		                          + (climbingLadder ? Vector2.up : Vector2.right)
-		                          * speed * Time.deltaTime);
-		animator.SetBool ("Moving", true);
+		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+		if (currentState.IsName("Walking") || currentState.IsName("Idle"))
+		{
+			rigidbody2D.MovePosition ((Vector2)transform.position 
+			                          + (climbingLadder ? Vector2.up : Vector2.right)
+			                          * speed * Time.deltaTime);
+
+		}
 	}
 
 

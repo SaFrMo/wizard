@@ -72,6 +72,7 @@ public class Spell : MonoBehaviour {
 
 
 		}
+		Wizard.WIZARD.GetComponent<Wizard>().AnimateSpell(spellType);
 		Destroy (gameObject);
 	}
 

@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 58dcdd7844f93b943a71d2801d1335c9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spells-01
+    21300002: Spells-01_0
+    21300004: Spells-01_1
+    21300006: Spells-01_2
+    21300008: Spells-01_3
+    21300010: Spells-01_4
+    21300012: Spells-01_5
+    21300014: Spells-01_6
+    21300016: Spells-01_7
+    21300018: Spells-01_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Spells-01_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 373
+        width: 128
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 372
+        width: 149
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 494
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 363
+        width: 104
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_4
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 478
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_5
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 453
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_6
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 431
+        width: 46
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_7
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 410
+        width: 44
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Spells-01_8
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 382
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
