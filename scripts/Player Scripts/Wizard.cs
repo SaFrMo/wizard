@@ -77,10 +77,19 @@ public class Wizard : MonoBehaviour {
 	}
 
 	private Vector3 targetPos = Vector3.zero;
+	private Vector3 lastPos;
+	private bool falling;
 
 	private void Update ()
 	{
+		if (transform.position.y < lastPos.y)
+			falling = true;
+		else 
+			falling = false;
+		lastPos = transform.position;
+
 		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+
 		if (returning || phasing) 
 		{
 			if (returning) targetPos = startPosition;
@@ -109,10 +118,8 @@ public class Wizard : MonoBehaviour {
 
 		if (currentState.IsName("Walking") || currentState.IsName("Idle"))
 		{
-			rigidbody2D.MovePosition ((Vector2)transform.position 
-			                          + (climbingLadder ? Vector2.up : Vector2.right)
-			                          * speed * Time.deltaTime);
-
+			rigidbody2D.velocity = (climbingLadder ? Vector2.up : Vector2.right) 
+				* (falling ? 0 : speed);
 		}
 	}
 
