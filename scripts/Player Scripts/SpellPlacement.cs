@@ -79,7 +79,8 @@ public class SpellPlacement : MonoBehaviour {
 			if (!Input.GetKey(cancelKey) && spellPlacer != null) {
 				// can only create a planter if it doesn't overlap another
 				Collider2D otherSpells = Physics2D.OverlapArea (spellPlacer.renderer.bounds.min, spellPlacer.renderer.bounds.max);
-				if (otherSpells == null)
+				// Only water can be a spell collider
+				if (otherSpells == null || otherSpells.gameObject.GetComponent<Water>() != null)
 					CreateSpell();
 				else
 					Destroy (spellPlacer);
