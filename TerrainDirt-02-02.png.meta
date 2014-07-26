@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: b6a9eb40d6777444ea9657e96ad10b8c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TerrainDirt-02-02_0
+    21300002: TerrainDirt-02-02_1
+    21300004: TerrainDirt-02-02_2
+    21300006: TerrainDirt-02-02_3
+    21300008: TerrainDirt-02-02_6
+    21300010: TerrainDirt-02-02_9
+    21300012: TerrainDirt-02-02_12
+    21300014: TerrainDirt-02-02_13
+    21300016: TerrainDirt-02-02_14
+    21300018: TerrainDirt-02-02_15
+    21300020: TerrainDirt-02-02_16
+    21300022: TerrainDirt-02-02_17
+    21300024: TerrainDirt-02-02_18
+    21300026: TerrainDirt-02-02_19
+    21300028: TerrainDirt-02-02_20
+    21300030: TerrainDirt-02-02_21
+    21300032: TerrainDirt-02-02_22
+    21300034: TerrainDirt-02-02_23
+    21300036: TerrainDirt-02-02_24
+    21300038: TerrainDirt-02-02_25
+    21300040: TerrainDirt-02-02_26
+    21300042: TerrainDirt-02-02_27
+    21300044: TerrainDirt-02-02_28
+    21300046: TerrainDirt-02-02_29
+    21300048: TerrainDirt-02-02_24
+    21300050: TerrainDirt-02-02_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TerrainDirt-02-02_0
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 4272
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_1
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 4272
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_2
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 4272
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_3
+      rect:
+        serializedVersion: 2
+        x: 4343
+        y: 4272
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_6
+      rect:
+        serializedVersion: 2
+        x: 7065
+        y: 5101
+        width: 346
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_9
+      rect:
+        serializedVersion: 2
+        x: 7273
+        y: 4306
+        width: 233
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_12
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2924
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_13
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 2924
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_14
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 2924
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_15
+      rect:
+        serializedVersion: 2
+        x: 4343
+        y: 2924
+        width: 1209
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_16
+      rect:
+        serializedVersion: 2
+        x: 5804
+        y: 3494
+        width: 1218
+        height: 527
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_17
+      rect:
+        serializedVersion: 2
+        x: 7273
+        y: 3416
+        width: 224
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_18
+      rect:
+        serializedVersion: 2
+        x: 5881
+        y: 2803
+        width: 1210
+        height: 544
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_19
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1533
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_20
+      rect:
+        serializedVersion: 2
+        x: 1534
+        y: 1533
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_21
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 1533
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_22
+      rect:
+        serializedVersion: 2
+        x: 4343
+        y: 1533
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_23
+      rect:
+        serializedVersion: 2
+        x: 5804
+        y: 1568
+        width: 1209
+        height: 1209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_24
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_25
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_26
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_27
+      rect:
+        serializedVersion: 2
+        x: 4308
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_28
+      rect:
+        serializedVersion: 2
+        x: 5994
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_29
+      rect:
+        serializedVersion: 2
+        x: 7454
+        y: 108
+        width: 1210
+        height: 1210
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_24
+      rect:
+        serializedVersion: 2
+        x: 5646
+        y: 4225
+        width: 1382
+        height: 553
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainDirt-02-02_25
+      rect:
+        serializedVersion: 2
+        x: 5613
+        y: 4833
+        width: 1295
+        height: 618
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
