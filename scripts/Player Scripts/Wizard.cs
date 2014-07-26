@@ -37,6 +37,12 @@ public class Wizard : MonoBehaviour {
 		{
 			climbingLadder = true;
 		}
+
+	}
+
+	private void OnCollisionStay2D (Collision2D c)
+	{
+		falling = false;
 	}
 
 	private void OnCollisionExit2D (Collision2D c)
@@ -84,8 +90,6 @@ public class Wizard : MonoBehaviour {
 	{
 		if (transform.position.y < lastPos.y)
 			falling = true;
-		else 
-			falling = false;
 		lastPos = transform.position;
 
 		AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
@@ -118,9 +122,8 @@ public class Wizard : MonoBehaviour {
 
 		if (currentState.IsName("Walking") || currentState.IsName("Idle"))
 		{
-			rigidbody2D.velocity = (climbingLadder ? Vector2.up : Vector2.right) 
-				* (falling ? 0 : speed);
-			print (falling);
+			if (!falling)
+				rigidbody2D.velocity = (climbingLadder ? Vector2.up : Vector2.right) * speed;
 		}
 	}
 
