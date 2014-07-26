@@ -120,6 +120,7 @@ public class Wizard : MonoBehaviour {
 		{
 			rigidbody2D.velocity = (climbingLadder ? Vector2.up : Vector2.right) 
 				* (falling ? 0 : speed);
+			print (falling);
 		}
 	}
 
