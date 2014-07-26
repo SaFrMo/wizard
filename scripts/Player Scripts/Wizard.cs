@@ -55,6 +55,18 @@ public class Wizard : MonoBehaviour {
 		case Spell.SpellType.Ice:
 			animator.SetTrigger("CastIce");
 			break;
+
+		case Spell.SpellType.Lightning:
+			animator.SetTrigger("CastLightning");
+			break;
+
+		case Spell.SpellType.Rain:
+			animator.SetTrigger("CastRain");
+			break;
+
+		case Spell.SpellType.Wind:
+			animator.SetTrigger("CastWind");
+			break;
 		}
 	}
 
