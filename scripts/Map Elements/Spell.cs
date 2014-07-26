@@ -11,7 +11,8 @@ public class Spell : MonoBehaviour {
 		Lightning,
 		Rain,
 		Ice,
-		Return
+		Return,
+		Phase
 	}
 
 	private delegate void SpellAction();

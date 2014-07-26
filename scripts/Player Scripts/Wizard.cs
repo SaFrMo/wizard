@@ -6,6 +6,7 @@ public class Wizard : MonoBehaviour {
 	public static string SELECTED_SPELL = "No Spell";
 	public static bool going = false;
 	public static bool returning = false;
+	public static bool phasing = false;
 	public static void Go() { going = true; }
 	public static void Stop() { going = false; }
 
@@ -67,12 +68,17 @@ public class Wizard : MonoBehaviour {
 		case Spell.SpellType.Wind:
 			animator.SetTrigger("CastWind");
 			break;
+
+		case Spell.SpellType.Return:
+		case Spell.SpellType.Phase:
+			animator.SetTrigger("CastReturnOrPhase");
+			break;
 		}
 	}
 
 	private void Update ()
 	{
-		if (returning) 
+		if (returning || phasing) 
 		{
 			transform.position = startPosition;
 			returning = false;
