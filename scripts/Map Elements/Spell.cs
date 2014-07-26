@@ -9,6 +9,7 @@ public class Spell : MonoBehaviour {
 		Wind,
 		Earth,
 		Lightning,
+		Rain,
 		Return
 	}
 
@@ -51,6 +52,10 @@ public class Spell : MonoBehaviour {
 				try { c.gameObject.GetComponent<AffectedByLightning>().ApplyEffect((Vector2)transform.position); }
 				catch {}
 			}
+			break;
+
+		case SpellType.Rain:
+			Water.RainSpell();
 			break;
 
 		case SpellType.Return:
