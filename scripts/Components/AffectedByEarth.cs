@@ -19,10 +19,7 @@ public class AffectedByEarth : MonoBehaviour {
 			GetComponent<Collider2D>().enabled = false;
 			foreach (Transform child in transform)
 			{
-				child.GetComponent<PolygonCollider2D>().enabled = true;
-				child.gameObject.AddComponent<Rigidbody2D>();
-				//child.rigidbody2D.
-				child.transform.parent = null;
+				child.gameObject.GetComponent<RocksSettle>().Settle();
 			}
 
 
