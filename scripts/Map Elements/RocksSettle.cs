@@ -26,5 +26,7 @@ public class RocksSettle : MonoBehaviour {
 			yield return null;
 
 		}
+		Destroy (gameObject);
+		yield break;
 	}
 }
