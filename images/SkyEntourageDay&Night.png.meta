@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: f5a70e45f80dc5a41ad86341ac59e605
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SkyEntourageDay&Night
+    21300002: SkyEntourageDay&Night_43
+    21300004: SkyEntourageDay&Night_45
+    21300006: SkyEntourageDay&Night_49
+    21300008: SkyEntourageDay&Night_51
+    21300010: SkyEntourageDay&Night_34
+    21300012: SkyEntourageDay&Night_23
+    21300014: SkyEntourageDay&Night_14
+    21300016: SkyEntourageDay&Night_15
+    21300018: SkyEntourageDay&Night_12
+    21300020: SkyEntourageDay&Night_13
+    21300022: SkyEntourageDay&Night_14
+    21300024: SkyEntourageDay&Night_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 400
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SkyEntourageDay&Night_43
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 851
+        width: 586
+        height: 392
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 797
+        height: 767
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_49
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 23
+        width: 786
+        height: 516
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_51
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 16
+        width: 447
+        height: 821
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_34
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1416
+        width: 309
+        height: 603
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_23
+      rect:
+        serializedVersion: 2
+        x: 1827
+        y: 1464
+        width: 189
+        height: 547
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_14
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1271
+        width: 742
+        height: 771
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_15
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1290
+        width: 675
+        height: 734
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_12
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 767
+        width: 434
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_13
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1053
+        width: 267
+        height: 187
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_14
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 997
+        width: 208
+        height: 265
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SkyEntourageDay&Night_15
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 771
+        width: 815
+        height: 442
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
