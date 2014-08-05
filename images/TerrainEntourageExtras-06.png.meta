@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: d2fd5d48549af3a49a92a50dda814f98
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TerrainEntourageExtras-06_0
+    21300002: TerrainEntourageExtras-06_1
+    21300004: TerrainEntourageExtras-06_2
+    21300006: TerrainEntourageExtras-06_3
+    21300008: TerrainEntourageExtras-06_4
+    21300010: TerrainEntourageExtras-06_5
+    21300012: TerrainEntourageExtras-06_6
+    21300014: TerrainEntourageExtras-06_7
+    21300016: TerrainEntourageExtras-06_8
+    21300018: TerrainEntourageExtras-06_9
+    21300020: TerrainEntourageExtras-06_10
+    21300022: TerrainEntourageExtras-06_11
+    21300024: TerrainEntourageExtras-06_12
+    21300026: TerrainEntourageExtras-06_13
+    21300028: TerrainEntourageExtras-06_14
+    21300030: TerrainEntourageExtras-06_15
+    21300032: TerrainEntourageExtras-06_16
+    21300034: TerrainEntourageExtras-06_17
+    21300036: TerrainEntourageExtras-06_18
+    21300038: TerrainEntourageExtras-06_19
+    21300040: TerrainEntourageExtras-06_20
+    21300042: TerrainEntourageExtras-06_21
+    21300044: TerrainEntourageExtras-06_22
+    21300046: TerrainEntourageExtras-06_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 144
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TerrainEntourageExtras-06_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1694
+        width: 291
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1688
+        width: 291
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_2
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1796
+        width: 217
+        height: 172
+      alignment: 9
+      pivot: {x: .546765327, y: .101749867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_3
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1780
+        width: 315
+        height: 194
+      alignment: 9
+      pivot: {x: .552351117, y: .074987039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1784
+        width: 84
+        height: 110
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_5
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1784
+        width: 227
+        height: 192
+      alignment: 9
+      pivot: {x: .645290554, y: .0903803483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_6
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 1780
+        width: 183
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1372
+        width: 291
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_8
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1362
+        width: 291
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_9
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1536
+        width: 940
+        height: 221
+      alignment: 9
+      pivot: {x: .994186878, y: .455474168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_10
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 1513
+        width: 309
+        height: 232
+      alignment: 9
+      pivot: {x: .482693672, y: .306381762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_11
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1296
+        width: 640
+        height: 221
+      alignment: 9
+      pivot: {x: .991018116, y: .465319335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_12
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1341
+        width: 454
+        height: 150
+      alignment: 9
+      pivot: {x: .963741899, y: .557122409}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_13
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1036
+        width: 137
+        height: 442
+      alignment: 9
+      pivot: {x: .18789205, y: .428496897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1044
+        width: 291
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_15
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1038
+        width: 293
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_16
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 933
+        width: 326
+        height: 334
+      alignment: 9
+      pivot: {x: .463015884, y: .224750087}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_17
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 944
+        width: 320
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_18
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1153
+        width: 331
+        height: 159
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_19
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 937
+        width: 318
+        height: 154
+      alignment: 9
+      pivot: {x: .934786439, y: .78166455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_20
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 5
+        width: 826
+        height: 897
+      alignment: 9
+      pivot: {x: .517342269, y: .0269004181}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_21
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 3
+        width: 686
+        height: 808
+      alignment: 9
+      pivot: {x: .604407668, y: .0191108063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_22
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 511
+        width: 267
+        height: 357
+      alignment: 9
+      pivot: {x: .559392929, y: .0706104934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TerrainEntourageExtras-06_23
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 24
+        width: 318
+        height: 413
+      alignment: 9
+      pivot: {x: .730855286, y: .0966375992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
