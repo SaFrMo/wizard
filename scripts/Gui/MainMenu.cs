@@ -4,13 +4,16 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
 	public Texture2D titleLogo, playButton, quitButton, settingsButton, infoButton;
+	public Texture2D menuBackground;
 	public string chosenLevel;
 
 	void OnGUI () {
-		GUI.Label(new Rect(Screen.width * .34f, 
-		                        Screen.height * .05f, 
-		                        Screen.width * .3f, 
-		                        Screen.width * .3f), titleLogo, GUIStyle.none);
+		GUI.DrawTexture(new Rect(0,0, 
+		                   Screen.width, 
+		                   Screen.height), menuBackground, ScaleMode.StretchToFill);
+		GUI.Label(new Rect(Screen.width * .3f, 0, 
+		                   Screen.width * .4f, 
+		                   Screen.width * .4f), titleLogo, GUIStyle.none);
 		if (GUI.Button(new Rect(Screen.width * .45f,
 		                        Screen.height * .75f,
 		                        Screen.width * .2f,
