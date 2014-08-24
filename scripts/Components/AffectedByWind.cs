@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(Collider2D))]
 public class AffectedByWind : MonoBehaviour {
 
 	public enum Effect
 	{
-		MovedByWind
+		MovedByWind,
+		MovesPlayer
 	}
 
 	public Effect effect = Effect.MovedByWind;
-	
-	public float spacesToMove = 3f;
+
+	public Vector2 movesPlayerDirection = Vector2.up;
+	public float strength = 3f;
 	
 	private Vector2 targetPosition;
 
@@ -23,7 +26,7 @@ public class AffectedByWind : MonoBehaviour {
 
 			targetPosition = Vector2.MoveTowards ((Vector2)transform.position,
 			                                      targetPosition,
-			                                      -spacesToMove);
+			                                      -strength);
 
 			//transform.position = targetPosition;
 
@@ -32,6 +35,11 @@ public class AffectedByWind : MonoBehaviour {
 				{ iT.MoveTo.time, 3f },
 				{ iT.MoveTo.easetype, iTween.EaseType.easeOutCubic }
 			});
+			break;
+
+		case Effect.MovesPlayer:
+			print (Wizard.WIZARD.name);
+			Wizard.WIZARD.rigidbody2D.AddForce (movesPlayerDirection * strength * Time.deltaTime, ForceMode2D.Force);
 			break;
 		}
 	}
