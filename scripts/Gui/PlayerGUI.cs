@@ -3,40 +3,29 @@ using System;
 using System.Collections;
 
 public class PlayerGUI : MonoBehaviour {
-	
-	public Texture[] spellTex;
-	public Texture goTex, redoTex;
-	public int arraypos = 0;
-	
+
+	public float spellSelectionBoxHeight = 100f;
+
 	private void OnGUI ()
 	{
-		GUILayout.BeginArea (new Rect(0,
-		                              0 + (Screen.height * .1f),
-		                              Screen.height * .12f,
-		                              Screen.height * .72f));
-		GUILayout.BeginVertical();
+		GUILayout.BeginArea (new Rect(Screen.width * .1f,
+		                              Screen.height - spellSelectionBoxHeight,
+		                              Screen.width * .8f,
+		                              spellSelectionBoxHeight));
+		GUILayout.BeginHorizontal();
 		foreach (string s in Enum.GetNames(typeof(Spell.SpellType)))
 		{
-			if (GUILayout.Button(s, GUILayout.Width (Screen.height * .12f), GUILayout.Height (Screen.height *.12f)))
+			if (GUILayout.Button(s))
 			{
 				Wizard.SELECTED_SPELL = s;
 			}
 		}
-		
-		
-		
-		
-		GUILayout.EndVertical();
-		GUILayout.EndArea ();
-		
-		GUILayout.BeginArea (new Rect(0,
-		                              0 + (Screen.height * .9f),
-		                              Screen.width * .3f,
-		                              Screen.height * .15f));
+		GUILayout.EndHorizontal();
+
 		GUILayout.BeginHorizontal();
-		if (GUILayout.Button (goTex, GUIStyle.none, GUILayout.Width (Screen.height * .15f), GUILayout.Height (Screen.height * .15f)))
+		if (GUILayout.Button ("GO!"))
 			Wizard.Go();
-		if (GUILayout.Button (redoTex, GUIStyle.none, GUILayout.Width (Screen.height * .15f), GUILayout.Height (Screen.height * .15f)))
+		if (GUILayout.Button ("Restart level!"))
 			Application.LoadLevel (Application.loadedLevelName);
 		GUILayout.EndHorizontal();
 		GUILayout.EndArea();

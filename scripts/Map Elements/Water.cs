@@ -7,7 +7,6 @@ public class Water : MonoBehaviour {
 	public static float riseAmount;
 	public static List<GameObject> ALL_WATER = new List<GameObject>();
 	public static float rainRate = 1f;
-	//public static GameObject STATIC_WATER;
 
 	public static void RainSpell()
 	{
@@ -18,8 +17,7 @@ public class Water : MonoBehaviour {
 				iTween.ScaleTo(go, new Hashtable() {
 					{ iT.ScaleTo.y, go.transform.localScale.y + riseAmount },
 					{ iT.ScaleTo.time, rainRate },
-					{ iT.ScaleTo.easetype, iTween.EaseType.easeOutQuart },
-					{ iT.ScaleTo.oncomplete, "UpdateWater" }
+					{ iT.ScaleTo.easetype, iTween.EaseType.easeOutQuart }
 				});
 
 				
@@ -33,18 +31,9 @@ public class Water : MonoBehaviour {
 	public float rise = 5f;
 	public bool frozen = false;
 
-	public void UpdateWater() {
-		if (AffectedByWater.ALL_AFFECTED_BY_WATER.Count <= 0) 
-			return;
-		foreach (GameObject go in AffectedByWater.ALL_AFFECTED_BY_WATER) {
-			go.GetComponent<AffectedByWater>().UpdateWater();
-		}
-	}
-
 	private void Awake ()
 	{
 		ALL_WATER.Add (gameObject);
-		//STATIC_WATER = gameObject;
 		riseAmount = rise;
 	}
 }

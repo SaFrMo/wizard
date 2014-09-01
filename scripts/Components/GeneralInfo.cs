@@ -14,10 +14,8 @@ public class GeneralInfo : MonoBehaviour {
 
 	private void OnTriggerEnter2D (Collider2D c)
 	{
-		if (c.gameObject.GetComponent<Water>() != null) {
-			isInWater = true; 
-			water = c.gameObject;
-		}
+		if (c.gameObject.GetComponent<Water>() != null)
+			isInWater = true; water = c.gameObject;
 	}
 
 	private void OnTriggerStay2D (Collider2D c)
@@ -35,10 +33,12 @@ public class GeneralInfo : MonoBehaviour {
 		if (c.gameObject.GetComponent<Water>() != null)
 			isInWater = false; if (water == c) water = null;
 	}
-	
+
+	[HideInInspector]
 	public GameObject water = null;
-	
-	public bool isInWater = false;
+
+	[HideInInspector]
+	public bool isInWater = true;
 
 	public void Kill()
 	{
